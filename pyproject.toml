@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pyokra"
+version = "0.1.0"
+description = "A modern python API wrapper for [Okra](https://okra.ng/) with async support"
+authors = ["Gbenga Adeyi <adeyigbenga005@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pyokra" }]
+keywords = ["okra", "pyokra", "okrapy"]
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.24.0"
+
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.0"
+mkdocs = "^1.4.2"
+mkdocstrings = "^0.21.2"
+mkdocs-material = "^9.1.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
